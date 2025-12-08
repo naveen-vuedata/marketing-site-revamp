@@ -1,10 +1,11 @@
 import React from "react";
-import { cn } from "@/lib/utils";
+
 import {
   typography,
-  variantMapping,
   type TypographyVariant,
+  variantMapping,
 } from "@/lib/typography";
+import { cn } from "@/lib/utils";
 
 interface TypographyProps extends React.HTMLAttributes<HTMLElement> {
   variant?: TypographyVariant;
