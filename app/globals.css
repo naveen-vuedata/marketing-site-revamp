@@ -1,6 +1,102 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Whitney Light - 300 - Normal */
+@font-face {
+  font-family: "Whitney";
+  src: url("/fonts/whitneylight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Whitney Light - 300 - Italic */
+@font-face {
+  font-family: "Whitney";
+  src: url("/fonts/whitneylightitalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Whitney Book - 400 - Normal */
+@font-face {
+  font-family: "Whitney";
+  src: url("/fonts/whitneybook.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Whitney Book - 400 - Italic */
+@font-face {
+  font-family: "Whitney";
+  src: url("/fonts/whitneybookitalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Whitney Medium - 500 - Normal */
+@font-face {
+  font-family: "Whitney";
+  src: url("/fonts/whitneymedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Whitney Medium - 500 - Italic */
+@font-face {
+  font-family: "Whitney";
+  src: url("/fonts/whitneymediumitalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Whitney Semibold - 600 - Normal */
+@font-face {
+  font-family: "Whitney";
+  src: url("/fonts/whitneysemibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Whitney Semibold - 600 - Italic */
+@font-face {
+  font-family: "Whitney";
+  src: url("/fonts/WhitneySemiboldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Whitney Bold - 700 - Normal */
+@font-face {
+  font-family: "Whitney";
+  src: url("/fonts/whitneybold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Whitney Bold- 700 - Normal */
+@font-face {
+  font-family: "Whitney";
+  src: url("/fonts/whitneybold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Monospace Font For Numbers */
+/* Roboto Mono - Normal */
+@font-face {
+  font-family: "RobotoMono";
+  src: url("/fonts/robotoMono.ttf") format("truetype");
+  font-style: normal;
+}
+
+/* Roboto Mono - Italic */
+@font-face {
+  font-family: "RobotoMono";
+  src: url("/fonts/robotoMonoItalic.otf") format("truetype");
+  font-style: italic;
+}
+
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -291,5 +387,6 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: "Whitney", sans-serif;
   }
 }
