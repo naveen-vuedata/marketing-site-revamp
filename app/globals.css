@@ -81,6 +81,14 @@
   font-style: normal;
 }
 
+/* Gotham Meidum - 500 - Normal */
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/gothamMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* Monospace Font For Numbers */
 /* Roboto Mono - Normal */
 @font-face {
@@ -95,7 +103,6 @@
   src: url("/fonts/robotoMonoItalic.otf") format("truetype");
   font-style: italic;
 }
-
 
 @custom-variant dark (&:is(.dark *));
 
@@ -224,6 +231,9 @@
 
   /* Divider */
   --color-divider: var(--divider);
+
+  --font-gotham-medium: "Gotham", sans-serif;
+  --font-whitney: "Whitney", sans-serif;
 }
 
 :root {
@@ -388,5 +398,11 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Whitney", sans-serif;
+  }
+}
+
+@layer utilities {
+  .container {
+    margin: 0 auto;
   }
 }
