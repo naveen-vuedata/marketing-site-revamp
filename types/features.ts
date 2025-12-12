@@ -5,4 +5,5 @@ export type Feature = {
   name: string;
   goatLink: string;
   exmaple:string
+  fightClubLink:string
 };
