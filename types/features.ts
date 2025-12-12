@@ -7,4 +7,5 @@ export type Feature = {
   goatLink: string;
   exmaple:string
   fightClubLink:string
+  game: string;
 };
